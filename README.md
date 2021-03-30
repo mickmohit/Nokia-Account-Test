@@ -3,10 +3,10 @@
 A typical top-level directory layout
 .
 
-├── src                     # Source files 
-├── test                    # Automated tests 
-├── target                   # Target files
-└── README.md
+── src                     # Source files 
+── test                    # Automated tests 
+── target                   # Target files
+── README.md
 
 # Requirements
 Java - 1.8.x
@@ -19,9 +19,11 @@ Mysql - 5.x.x
 1. Clone the application
 
 git clone https://github.com/mickmohit/Nokia-Account-Test.git
+
 2. Create Mysql database
 
 create database test_database
+
 3. Change mysql username and password as per your installation
 
 open src/main/resources/application.properties
