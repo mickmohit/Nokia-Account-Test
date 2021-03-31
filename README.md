@@ -3,10 +3,10 @@
 A typical top-level directory layout
 .
 
-── src                     # Source files 
+── src                     # Source and test files 
 ── test                    # Automated tests 
 ── target                   # Target files
-── README.md
+── pom.xml                   # dependencies 
 
 # Requirements
 Java - 1.8.x
@@ -51,3 +51,10 @@ PUT /api/accounts/{accountId}
 DELETE /api/accounts/{accountId}
 
 You can test them using postman or any other rest client.
+
+# Test approach
+Automation test cases are under */demo/automationTests/*.
+For Automation # TestNG framework is used.
+
+Make sure for update/delete automation test cases, value referring to specific id's for these test cases exists in backend.
+
