@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-31T12:57:31 IST" name="Default suite" finished-at="2021-03-31T12:57:31 IST" duration-ms="492">
+    <groups>
+    </groups>
+    <test started-at="2021-03-31T12:57:31 IST" name="Default test" finished-at="2021-03-31T12:57:31 IST" duration-ms="492">
+      <class name="com.example.demo.automationTests.BasicTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="beforeMethod" finished-at="2021-03-31T12:57:31 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addAccountTest()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="addAccountTest" finished-at="2021-03-31T12:57:31 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAccountTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="beforeMethod" finished-at="2021-03-31T12:57:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="afterMethod" finished-at="2021-03-31T12:57:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="deleteEmployee()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="deleteEmployee" finished-at="2021-03-31T12:57:31 IST" duration-ms="17" status="FAIL">
+          <exception class="org.springframework.web.client.HttpClientErrorException$NotFound">
+            <message>
+              <![CDATA[404 : [{"timestamp":"2021-03-31T07:27:31.869+00:00","status":404,"error":"Not Found","trace":"com.example.demo.exception.ResourceNotFoundException: Account not found with id : '3'\r\n\tat com.example.demo.co... (5421 bytes)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.client.HttpClientErrorException$NotFound: 404 : [{"timestamp":"2021-03-31T07:27:31.869+00:00","status":404,"error":"Not Found","trace":"com.example.demo.exception.ResourceNotFoundException: Account not found with id : '3'\r\n\tat com.example.demo.co... (5421 bytes)]
+at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
+at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+at com.example.demo.automationTests.BasicTest.deleteEmployee(BasicTest.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.client.HttpClientErrorException$NotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="afterMethod" finished-at="2021-03-31T12:57:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="beforeMethod" finished-at="2021-03-31T12:57:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="updateAccountTest()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="updateAccountTest" finished-at="2021-03-31T12:57:31 IST" depends-on-methods="com.example.demo.automationTests.BasicTest.addAccountTest" duration-ms="7" status="FAIL">
+          <exception class="org.springframework.web.client.HttpClientErrorException$BadRequest">
+            <message>
+              <![CDATA[400 : [{"timestamp":"2021-03-31T07:27:31.890+00:00","status":400,"error":"Bad Request","trace":"org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Accou... (7759 bytes)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : [{"timestamp":"2021-03-31T07:27:31.890+00:00","status":400,"error":"Bad Request","trace":"org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Accou... (7759 bytes)]
+at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
+at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125)
+at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+at com.example.demo.automationTests.BasicTest.updateAccountTest(BasicTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.client.HttpClientErrorException$BadRequest -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAccountTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.demo.automationTests.BasicTest@3a6bb9bf]" started-at="2021-03-31T12:57:31 IST" name="afterMethod" finished-at="2021-03-31T12:57:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.example.demo.automationTests.BasicTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
