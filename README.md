@@ -54,7 +54,7 @@ You can test them using postman or any other rest client.
 
 # Test approach
 Automation test cases are under */demo/automationTests/*.
-For Automation # TestNG framework is used.
+For Automation ``TestNG framework``` is used.
 
 Make sure for update/delete automation test cases, value referring to specific id's for these test cases exists in backend.
 
